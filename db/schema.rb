@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130322221733) do
+ActiveRecord::Schema.define(:version => 20130421152855) do
 
   create_table "pins", :force => true do |t|
     t.string   "description"
@@ -45,5 +45,14 @@ ActiveRecord::Schema.define(:version => 20130322221733) do
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "videos", :force => true do |t|
+    t.string   "source_content_type"
+    t.string   "source_file_name"
+    t.integer  "source_file_size"
+    t.string   "state"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+  end
 
 end
