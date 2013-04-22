@@ -7,7 +7,7 @@ gem 'simple_form'
 gem 'paperclip', '~> 3.0' 
 gem 'aws-sdk', '1.9.1'
 gem 'faker'
-gem 'will_paginate', '3.0.4'
+gem 'will_paginate', "3.0.4"
 gem 'bootstrap-will_paginate'
 
 group :production do
