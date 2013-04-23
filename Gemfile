@@ -9,6 +9,7 @@ gem 'aws-sdk', '1.9.1'
 gem 'faker'
 gem 'will_paginate', "3.0.4"
 gem 'bootstrap-will_paginate'
+gem 'paperclip-ffmpeg'
 
 group :production do
 	gem 'pg'

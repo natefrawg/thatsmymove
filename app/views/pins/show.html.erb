@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="span6 offset3">
 		<div class="well">
-			<%= video_tag @pin.image, :size => "320x240", :controls => true %>
+			<%= video_tag @pin.image(:medium), :streaming => true, :controls => true %>
 			<%#= image_tag @pin.image %>
 			<p>
 	  		<%= @pin.description %>

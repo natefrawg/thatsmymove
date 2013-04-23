@@ -37,4 +37,7 @@ Omrails::Application.configure do
 
   # Host for email reminders
   config.action_mailer.default_url_options = { :host => 'localhost:3000'}
+
+  # Point Paperclip to FFMPEG in Dev environment
+  Paperclip.options[:command_path] = "C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems"
 end
